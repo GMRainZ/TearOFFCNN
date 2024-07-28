@@ -1,0 +1,10 @@
+^D:\RAIN_PROGRAMING\VSCODEPROJECT\CNN\CMAKELISTS.TXT
+setlocal
+D:\Qt\Tools\CMake_64\bin\cmake.exe -SD:/rain_programing/vscodeProject/CNN -BD:/rain_programing/vscodeProject/CNN/build --check-stamp-file D:/rain_programing/vscodeProject/CNN/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^D:\RAIN_PROGRAMING\VSCODEPROJECT\CNN\BUILD\CMAKEFILES\827B21C310787D619FAEF27AABD1C609\GENERATE.STAMP.RULE
+setlocal
+D:\Qt\Tools\CMake_64\bin\cmake.exe -SD:/rain_programing/vscodeProject/CNN -BD:/rain_programing/vscodeProject/CNN/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/rain_programing/vscodeProject/CNN/build/CNN.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
