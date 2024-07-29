@@ -65,7 +65,10 @@ cmake_minimum_required(VERSION 3.25)
 project(CNN)
 
 
-set(CMAKE_CXX_STANDARD 17)
+# 添加编译选项
+SET(CMAKE_CXX_FLAGS "-std=c++17 -O2")
+# 生成文件的输出目录
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(OpenCV_DIR D:\\rain_programing\\vscodeProject\\buildOpenCV\\buildOpenCV\\install)

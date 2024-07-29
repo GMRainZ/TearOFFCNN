@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/rain_programing/vscodeProject/CNN/src/architectures.cpp" "CMakeFiles/CNN.dir/src/architectures.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/architectures.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/data_format.cpp" "CMakeFiles/CNN.dir/src/data_format.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/data_format.cpp.obj.d"
+  "D:/rain_programing/vscodeProject/CNN/src/linear.cpp" "CMakeFiles/CNN.dir/src/linear.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/linear.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/main.cpp" "CMakeFiles/CNN.dir/src/main.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/main.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/pipeline.cpp" "CMakeFiles/CNN.dir/src/pipeline.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/pipeline.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/pool2d.cpp" "CMakeFiles/CNN.dir/src/pool2d.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/pool2d.cpp.obj.d"

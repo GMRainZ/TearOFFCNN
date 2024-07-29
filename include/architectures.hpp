@@ -34,8 +34,8 @@ namespace architectures {
         virtual std::vector<tensor> forward(const std::vector<tensor>&input) = 0;
         virtual std::vector<tensor> backward(const std::vector<tensor>&delta) = 0;
         virtual void update_gradients(const data_type learning_rate=1e-4){};
-        virtual void save_wights(std::ofstream& writer)const{};
-        virtual void load_wights(std::ifstream& reader){};
+        virtual void save_weights(std::ofstream& writer)const{};
+        virtual void load_weights(std::ifstream& reader){};
         virtual std::vector<tensor> get_output()const{return this->output;}
     };
 
@@ -154,7 +154,7 @@ namespace architectures {
          * @brief 返回的delta
          * 
          */
-        std::vector<std::vector<int>>delta_output;
+        std::vector<tensor>delta_output;
 
         /**
          * @brief 偏移量指针
@@ -183,7 +183,7 @@ namespace architectures {
          * @brief 输出神经元的个数
          * 
          */
-        const int out_channel;
+        const int out_channels;
         /**
          * @brief 权值矩阵
          * 
@@ -201,7 +201,19 @@ namespace architectures {
          * 
          */
         std::tuple<int,int,int>delta_shape;
-    
+
+        /**
+         * @brief 保存回传信息
+         * 
+         */
+        std::vector<tensor>__input;
+
+        /**
+         * @brief delta回传到输入的梯度
+         * 
+         */
+        std::vector<tensor>delta_output;
+
         /**
          * @brief 权值矩阵的梯度
          * 
@@ -221,7 +233,7 @@ namespace architectures {
          * @param _in_channels 
          * @param _out_channel 
          */
-        LinearLayer(std::string _name,const int _in_channels,const int _out_channel);   
+        LinearLayer(std::string _name,const int _in_channels,const int _out_channels);   
 
         /**
          * @brief 前向传播
@@ -236,7 +248,9 @@ namespace architectures {
          */
         std::vector<tensor>backward(std::vector<tensor>&delta);
 
-        
+        virtual void update_gradients(const data_type learning_rate=1e-4);
+        virtual void save_weights(std::ofstream& writer)const;
+        virtual void load_weights(std::ifstream& reader);
     };
 }
 

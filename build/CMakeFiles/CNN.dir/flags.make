@@ -6,5 +6,5 @@ CXX_DEFINES = -DIMAGE_DIR=\"D:/rain_programing/vscodeProject/CNN/imagesDir\"
 
 CXX_INCLUDES = @CMakeFiles/CNN.dir/includes_CXX.rsp
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
+CXX_FLAGS = -std=c++17 -O2 -O3 -DNDEBUG
 

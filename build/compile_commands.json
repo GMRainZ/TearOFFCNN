@@ -1,37 +1,43 @@
 [
 {
   "directory": "D:/rain_programing/vscodeProject/CNN/build",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\CNN.dir\\src\\architectures.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\architectures.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -std=c++17 -O2 -O3 -DNDEBUG -o CMakeFiles\\CNN.dir\\src\\architectures.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\architectures.cpp",
   "file": "D:/rain_programing/vscodeProject/CNN/src/architectures.cpp",
   "output": "CMakeFiles/CNN.dir/src/architectures.cpp.obj"
 },
 {
   "directory": "D:/rain_programing/vscodeProject/CNN/build",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\CNN.dir\\src\\data_format.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\data_format.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -std=c++17 -O2 -O3 -DNDEBUG -o CMakeFiles\\CNN.dir\\src\\data_format.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\data_format.cpp",
   "file": "D:/rain_programing/vscodeProject/CNN/src/data_format.cpp",
   "output": "CMakeFiles/CNN.dir/src/data_format.cpp.obj"
 },
 {
   "directory": "D:/rain_programing/vscodeProject/CNN/build",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\CNN.dir\\src\\main.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\main.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -std=c++17 -O2 -O3 -DNDEBUG -o CMakeFiles\\CNN.dir\\src\\linear.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\linear.cpp",
+  "file": "D:/rain_programing/vscodeProject/CNN/src/linear.cpp",
+  "output": "CMakeFiles/CNN.dir/src/linear.cpp.obj"
+},
+{
+  "directory": "D:/rain_programing/vscodeProject/CNN/build",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -std=c++17 -O2 -O3 -DNDEBUG -o CMakeFiles\\CNN.dir\\src\\main.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\main.cpp",
   "file": "D:/rain_programing/vscodeProject/CNN/src/main.cpp",
   "output": "CMakeFiles/CNN.dir/src/main.cpp.obj"
 },
 {
   "directory": "D:/rain_programing/vscodeProject/CNN/build",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\CNN.dir\\src\\pipeline.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\pipeline.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -std=c++17 -O2 -O3 -DNDEBUG -o CMakeFiles\\CNN.dir\\src\\pipeline.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\pipeline.cpp",
   "file": "D:/rain_programing/vscodeProject/CNN/src/pipeline.cpp",
   "output": "CMakeFiles/CNN.dir/src/pipeline.cpp.obj"
 },
 {
   "directory": "D:/rain_programing/vscodeProject/CNN/build",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\CNN.dir\\src\\pool2d.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\pool2d.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -std=c++17 -O2 -O3 -DNDEBUG -o CMakeFiles\\CNN.dir\\src\\pool2d.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\pool2d.cpp",
   "file": "D:/rain_programing/vscodeProject/CNN/src/pool2d.cpp",
   "output": "CMakeFiles/CNN.dir/src/pool2d.cpp.obj"
 },
 {
   "directory": "D:/rain_programing/vscodeProject/CNN/build",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\CNN.dir\\src\\relu.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\relu.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DIMAGE_DIR=\\\"D:/rain_programing/vscodeProject/CNN/imagesDir\\\" @CMakeFiles/CNN.dir/includes_CXX.rsp -std=c++17 -O2 -O3 -DNDEBUG -o CMakeFiles\\CNN.dir\\src\\relu.cpp.obj -c D:\\rain_programing\\vscodeProject\\CNN\\src\\relu.cpp",
   "file": "D:/rain_programing/vscodeProject/CNN/src/relu.cpp",
   "output": "CMakeFiles/CNN.dir/src/relu.cpp.obj"
 }

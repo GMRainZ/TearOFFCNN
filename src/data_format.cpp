@@ -126,6 +126,11 @@ int Tensor3D::get_length()const
     return C*H*W;
 }
 
+std::tuple<int,int,int>Tensor3D::get_shape()const
+{
+    return std::make_tuple(C,H,W);
+}
+
 void Tensor3D::print_shape()const
 {
     std::cout << this->name << "  ==>  " << this->C << " x " << this->H << " x " << this->W << "\n";

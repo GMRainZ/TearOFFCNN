@@ -176,6 +176,30 @@ src/data_format.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/data_format.cpp.s
 .PHONY : src/data_format.cpp.s
 
+src/linear.obj: src/linear.cpp.obj
+.PHONY : src/linear.obj
+
+# target to build an object file
+src/linear.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/linear.cpp.obj
+.PHONY : src/linear.cpp.obj
+
+src/linear.i: src/linear.cpp.i
+.PHONY : src/linear.i
+
+# target to preprocess a source file
+src/linear.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/linear.cpp.i
+.PHONY : src/linear.cpp.i
+
+src/linear.s: src/linear.cpp.s
+.PHONY : src/linear.s
+
+# target to generate assembly for a file
+src/linear.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/linear.cpp.s
+.PHONY : src/linear.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -287,6 +311,9 @@ help:
 	@echo ... src/data_format.obj
 	@echo ... src/data_format.i
 	@echo ... src/data_format.s
+	@echo ... src/linear.obj
+	@echo ... src/linear.i
+	@echo ... src/linear.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

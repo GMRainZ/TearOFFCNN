@@ -21,10 +21,10 @@ std::vector<tensor> MaxPool2D::forward(const std::vector<tensor>&input){
     //第一次经过池化层
     if(this->output.empty()){
         //分配空间
-        this->output = std::vector<tensor>(batch_size);
-
+        // this->output = std::vector<tensor>(batch_size);
+        this->output.reserve(batch_size);
         for(int i=0;i<batch_size;i++) 
-            this->output.emplace_back(new Tensor3D(C,out_H,out_W,this->name+"_output_"+std::to_string(i)));
+            this->output.emplace_back(new Tensor3D(C,H,W,this->name+"_output_"+std::to_string(i)));
 
         //给delta分配空间
         if(!no_grad){
@@ -99,4 +99,29 @@ std::vector<tensor> MaxPool2D::forward(const std::vector<tensor>&input){
     }
 
     return this->output;
+}
+
+
+
+std::vector<tensor>MaxPool2D::backward(const std::vector<tensor>& delta){
+    //获取输入的梯度信息
+    const int batch_size=delta.size();
+    for(int b=0;b<batch_size;++b){
+        this->delta_output[b]->set_zero();
+    }
+    const int total_length=delta.size();
+    // batch 每张图像, 根据 mask 标记的位置, 把 delta 中的值填到 delta_output 中去
+    for(int b=0;b<batch_size;++b){
+        int *mask_ptr=this->mask[b].data();
+        //获取delta 的第b张输出传回的梯度的起始地址
+        data_type*const src_ptr=delta[b]->data;
+        //获取返回到输入的梯度，第b张梯度的起始地址
+        data_type*const res_ptr=this->delta_output[b]->data;
+
+        for(int i=0;i<total_length;++i){
+            res_ptr[mask_ptr[i]]=src_ptr[i];
+        }
+    }
+
+    return this->delta_output;
 }
