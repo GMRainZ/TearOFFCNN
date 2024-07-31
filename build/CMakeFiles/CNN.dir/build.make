@@ -83,11 +83,26 @@ CMakeFiles/CNN.dir/src/architectures.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNN.dir/src/architectures.cpp.s"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\rain_programing\vscodeProject\CNN\src\architectures.cpp -o CMakeFiles\CNN.dir\src\architectures.cpp.s
 
+CMakeFiles/CNN.dir/src/conv2d.cpp.obj: CMakeFiles/CNN.dir/flags.make
+CMakeFiles/CNN.dir/src/conv2d.cpp.obj: CMakeFiles/CNN.dir/includes_CXX.rsp
+CMakeFiles/CNN.dir/src/conv2d.cpp.obj: D:/rain_programing/vscodeProject/CNN/src/conv2d.cpp
+CMakeFiles/CNN.dir/src/conv2d.cpp.obj: CMakeFiles/CNN.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CNN.dir/src/conv2d.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNN.dir/src/conv2d.cpp.obj -MF CMakeFiles\CNN.dir\src\conv2d.cpp.obj.d -o CMakeFiles\CNN.dir\src\conv2d.cpp.obj -c D:\rain_programing\vscodeProject\CNN\src\conv2d.cpp
+
+CMakeFiles/CNN.dir/src/conv2d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNN.dir/src/conv2d.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\rain_programing\vscodeProject\CNN\src\conv2d.cpp > CMakeFiles\CNN.dir\src\conv2d.cpp.i
+
+CMakeFiles/CNN.dir/src/conv2d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNN.dir/src/conv2d.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\rain_programing\vscodeProject\CNN\src\conv2d.cpp -o CMakeFiles\CNN.dir\src\conv2d.cpp.s
+
 CMakeFiles/CNN.dir/src/data_format.cpp.obj: CMakeFiles/CNN.dir/flags.make
 CMakeFiles/CNN.dir/src/data_format.cpp.obj: CMakeFiles/CNN.dir/includes_CXX.rsp
 CMakeFiles/CNN.dir/src/data_format.cpp.obj: D:/rain_programing/vscodeProject/CNN/src/data_format.cpp
 CMakeFiles/CNN.dir/src/data_format.cpp.obj: CMakeFiles/CNN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CNN.dir/src/data_format.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CNN.dir/src/data_format.cpp.obj"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNN.dir/src/data_format.cpp.obj -MF CMakeFiles\CNN.dir\src\data_format.cpp.obj.d -o CMakeFiles\CNN.dir\src\data_format.cpp.obj -c D:\rain_programing\vscodeProject\CNN\src\data_format.cpp
 
 CMakeFiles/CNN.dir/src/data_format.cpp.i: cmake_force
@@ -102,7 +117,7 @@ CMakeFiles/CNN.dir/src/linear.cpp.obj: CMakeFiles/CNN.dir/flags.make
 CMakeFiles/CNN.dir/src/linear.cpp.obj: CMakeFiles/CNN.dir/includes_CXX.rsp
 CMakeFiles/CNN.dir/src/linear.cpp.obj: D:/rain_programing/vscodeProject/CNN/src/linear.cpp
 CMakeFiles/CNN.dir/src/linear.cpp.obj: CMakeFiles/CNN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CNN.dir/src/linear.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CNN.dir/src/linear.cpp.obj"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNN.dir/src/linear.cpp.obj -MF CMakeFiles\CNN.dir\src\linear.cpp.obj.d -o CMakeFiles\CNN.dir\src\linear.cpp.obj -c D:\rain_programing\vscodeProject\CNN\src\linear.cpp
 
 CMakeFiles/CNN.dir/src/linear.cpp.i: cmake_force
@@ -117,7 +132,7 @@ CMakeFiles/CNN.dir/src/main.cpp.obj: CMakeFiles/CNN.dir/flags.make
 CMakeFiles/CNN.dir/src/main.cpp.obj: CMakeFiles/CNN.dir/includes_CXX.rsp
 CMakeFiles/CNN.dir/src/main.cpp.obj: D:/rain_programing/vscodeProject/CNN/src/main.cpp
 CMakeFiles/CNN.dir/src/main.cpp.obj: CMakeFiles/CNN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CNN.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CNN.dir/src/main.cpp.obj"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNN.dir/src/main.cpp.obj -MF CMakeFiles\CNN.dir\src\main.cpp.obj.d -o CMakeFiles\CNN.dir\src\main.cpp.obj -c D:\rain_programing\vscodeProject\CNN\src\main.cpp
 
 CMakeFiles/CNN.dir/src/main.cpp.i: cmake_force
@@ -132,7 +147,7 @@ CMakeFiles/CNN.dir/src/pipeline.cpp.obj: CMakeFiles/CNN.dir/flags.make
 CMakeFiles/CNN.dir/src/pipeline.cpp.obj: CMakeFiles/CNN.dir/includes_CXX.rsp
 CMakeFiles/CNN.dir/src/pipeline.cpp.obj: D:/rain_programing/vscodeProject/CNN/src/pipeline.cpp
 CMakeFiles/CNN.dir/src/pipeline.cpp.obj: CMakeFiles/CNN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CNN.dir/src/pipeline.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CNN.dir/src/pipeline.cpp.obj"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNN.dir/src/pipeline.cpp.obj -MF CMakeFiles\CNN.dir\src\pipeline.cpp.obj.d -o CMakeFiles\CNN.dir\src\pipeline.cpp.obj -c D:\rain_programing\vscodeProject\CNN\src\pipeline.cpp
 
 CMakeFiles/CNN.dir/src/pipeline.cpp.i: cmake_force
@@ -147,7 +162,7 @@ CMakeFiles/CNN.dir/src/pool2d.cpp.obj: CMakeFiles/CNN.dir/flags.make
 CMakeFiles/CNN.dir/src/pool2d.cpp.obj: CMakeFiles/CNN.dir/includes_CXX.rsp
 CMakeFiles/CNN.dir/src/pool2d.cpp.obj: D:/rain_programing/vscodeProject/CNN/src/pool2d.cpp
 CMakeFiles/CNN.dir/src/pool2d.cpp.obj: CMakeFiles/CNN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CNN.dir/src/pool2d.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CNN.dir/src/pool2d.cpp.obj"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNN.dir/src/pool2d.cpp.obj -MF CMakeFiles\CNN.dir\src\pool2d.cpp.obj.d -o CMakeFiles\CNN.dir\src\pool2d.cpp.obj -c D:\rain_programing\vscodeProject\CNN\src\pool2d.cpp
 
 CMakeFiles/CNN.dir/src/pool2d.cpp.i: cmake_force
@@ -162,7 +177,7 @@ CMakeFiles/CNN.dir/src/relu.cpp.obj: CMakeFiles/CNN.dir/flags.make
 CMakeFiles/CNN.dir/src/relu.cpp.obj: CMakeFiles/CNN.dir/includes_CXX.rsp
 CMakeFiles/CNN.dir/src/relu.cpp.obj: D:/rain_programing/vscodeProject/CNN/src/relu.cpp
 CMakeFiles/CNN.dir/src/relu.cpp.obj: CMakeFiles/CNN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CNN.dir/src/relu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CNN.dir/src/relu.cpp.obj"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNN.dir/src/relu.cpp.obj -MF CMakeFiles\CNN.dir\src\relu.cpp.obj.d -o CMakeFiles\CNN.dir\src\relu.cpp.obj -c D:\rain_programing\vscodeProject\CNN\src\relu.cpp
 
 CMakeFiles/CNN.dir/src/relu.cpp.i: cmake_force
@@ -176,6 +191,7 @@ CMakeFiles/CNN.dir/src/relu.cpp.s: cmake_force
 # Object files for target CNN
 CNN_OBJECTS = \
 "CMakeFiles/CNN.dir/src/architectures.cpp.obj" \
+"CMakeFiles/CNN.dir/src/conv2d.cpp.obj" \
 "CMakeFiles/CNN.dir/src/data_format.cpp.obj" \
 "CMakeFiles/CNN.dir/src/linear.cpp.obj" \
 "CMakeFiles/CNN.dir/src/main.cpp.obj" \
@@ -187,6 +203,7 @@ CNN_OBJECTS = \
 CNN_EXTERNAL_OBJECTS =
 
 D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/src/architectures.cpp.obj
+D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/src/conv2d.cpp.obj
 D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/src/data_format.cpp.obj
 D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/src/linear.cpp.obj
 D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/src/main.cpp.obj
@@ -212,7 +229,7 @@ D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: D:/rain_programing/vscodeProje
 D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/linkLibs.rsp
 D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/objects1.rsp
 D:/rain_programing/vscodeProject/CNN/bin/CNN.exe: CMakeFiles/CNN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable D:\rain_programing\vscodeProject\CNN\bin\CNN.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\rain_programing\vscodeProject\CNN\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable D:\rain_programing\vscodeProject\CNN\bin\CNN.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CNN.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

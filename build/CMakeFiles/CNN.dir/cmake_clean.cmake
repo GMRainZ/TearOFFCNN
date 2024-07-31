@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CNN.dir/src/architectures.cpp.obj"
   "CMakeFiles/CNN.dir/src/architectures.cpp.obj.d"
+  "CMakeFiles/CNN.dir/src/conv2d.cpp.obj"
+  "CMakeFiles/CNN.dir/src/conv2d.cpp.obj.d"
   "CMakeFiles/CNN.dir/src/data_format.cpp.obj"
   "CMakeFiles/CNN.dir/src/data_format.cpp.obj.d"
   "CMakeFiles/CNN.dir/src/linear.cpp.obj"

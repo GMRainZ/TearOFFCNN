@@ -77,7 +77,7 @@ namespace architectures {
          * @param _kernel_size 卷积核的尺寸
          * @param _stride 步长
          */
-        Conv2D(std::string _name,const int _in_channels=3,
+        Conv2D(const std::string _name,const int _in_channels=3,
             const int _out_channels=16,const int _kernel_size=3,
             const int _stride=2);
         //卷积操作的forward过程，batch_num X in_channels X height X width
@@ -110,7 +110,7 @@ namespace architectures {
          * 
          * @param path 
          */
-        virtual void save_weights(const std::string path)const;
+        virtual void save_weights(std::ofstream& writer)const;
         
         /**
          * @brief 加载权值
@@ -123,7 +123,7 @@ namespace architectures {
          * @brief Get the params num object
          * 
          */
-        void get_params_num()const;
+        int get_params_num()const;
     };
 
     class MaxPool2D:public Layer{
@@ -251,6 +251,111 @@ namespace architectures {
         virtual void update_gradients(const data_type learning_rate=1e-4);
         virtual void save_weights(std::ofstream& writer)const;
         virtual void load_weights(std::ifstream& reader);
+    };
+
+
+
+    class BatchNorm2D : public Layer{
+    private:
+        const int out_channels;
+        const data_type eps;
+        const data_type momentum;
+
+        //要学习的参数
+        std::vector<data_type>gamma;
+        std::vector<data_type>beta;
+
+        //history information
+        std::vector<data_type>moving_mean;
+        std::vector<data_type>moving_var;
+
+        //缓冲区
+        std::vector<tensor>normed_input;;
+        std::vector<data_type>buffer_mean;
+        std::vector<data_type>buffer_var;
+
+        //保留梯度信息
+        std::vector<data_type>gamma_gradients;
+        std::vector<data_type>beta_gradients;
+
+        //临时梯度
+        tensor norm_graients;
+
+        //求梯度时用得到
+        std::vector<tensor>__input;
+
+    public:
+        /**
+         * @brief Construct a new BatchNorm2D object
+         * 
+         */
+        BatchNorm2D(std::string _name,const int _out_channels,const data_type _eps=1e-5,const data_type _momentum=0.1);
+
+        /**
+         * @brief forward  
+         * 
+         */
+        std::vector<tensor>forward(const std::vector<tensor>&input);
+
+        /**
+         * @brief backward
+         * 
+         */
+        std::vector<tensor>backward(std::vector<tensor>&delta);
+    
+        /**
+         * @brief 更新学习率
+         * 
+         * @param learning_rate 
+         */
+        virtual void update_gradients(const data_type learning_rate=1e-4);
+
+        /**
+         * @brief 保存权值
+         * 
+         * @param writer 
+         */
+        virtual void save_weights(std::ofstream& writer)const;
+        
+        /**
+         * @brief 读取权值
+         * 
+         * @param reader 
+         */
+        virtual void load_weights(std::ifstream& reader);
+    };
+
+
+    class Dropout : public Layer{
+    private:
+        const data_type p;
+        int selected_num;
+        std::vector<int>sequence;
+        std::default_random_engine drop;
+        std::vector<int>mask;
+    public:
+        /**
+         * @brief Construct a new Dropout object
+         * 
+         * @param _name 
+         * @param _p 
+         */
+        Dropout(std::string _name,const data_type _p=0.5)
+            :Layer(_name),p(_p),drop(std::chrono::system_clock::now().time_since_epoch().count()){}
+        
+        /**
+         * @brief forward
+         * 
+         * @param input 
+         */
+        std::vector<tensor>forward(const std::vector<tensor>&input);
+        
+        /**
+         * @brief backward
+         * 
+         * @param delta 
+         */
+        std::vector<tensor>backward(std::vector<tensor>&delta);
     };
 }
 

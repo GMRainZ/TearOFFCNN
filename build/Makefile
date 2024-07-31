@@ -152,6 +152,30 @@ src/architectures.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/architectures.cpp.s
 .PHONY : src/architectures.cpp.s
 
+src/conv2d.obj: src/conv2d.cpp.obj
+.PHONY : src/conv2d.obj
+
+# target to build an object file
+src/conv2d.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/conv2d.cpp.obj
+.PHONY : src/conv2d.cpp.obj
+
+src/conv2d.i: src/conv2d.cpp.i
+.PHONY : src/conv2d.i
+
+# target to preprocess a source file
+src/conv2d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/conv2d.cpp.i
+.PHONY : src/conv2d.cpp.i
+
+src/conv2d.s: src/conv2d.cpp.s
+.PHONY : src/conv2d.s
+
+# target to generate assembly for a file
+src/conv2d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CNN.dir\build.make CMakeFiles/CNN.dir/src/conv2d.cpp.s
+.PHONY : src/conv2d.cpp.s
+
 src/data_format.obj: src/data_format.cpp.obj
 .PHONY : src/data_format.obj
 
@@ -308,6 +332,9 @@ help:
 	@echo ... src/architectures.obj
 	@echo ... src/architectures.i
 	@echo ... src/architectures.s
+	@echo ... src/conv2d.obj
+	@echo ... src/conv2d.i
+	@echo ... src/conv2d.s
 	@echo ... src/data_format.obj
 	@echo ... src/data_format.i
 	@echo ... src/data_format.s
