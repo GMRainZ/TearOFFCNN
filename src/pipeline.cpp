@@ -87,7 +87,7 @@ std::map<std::string,pipeline::list_type>pipeline::get_images_for_classification
     for(int i=0;i<categories_num;++i)
     {
         const auto images_dir= dataset_path / categories[i];//图片路径
-        assert(std::filesystem::exists(images_dir)&& std::string(images_dir.string()+"isn't exist").c_str());//检查路径是否存在
+        assert(std::filesystem::exists(images_dir) && std::string(images_dir.string()+"isn't exist").c_str());//检查路径是否存在
     
         //遍历图片路径
         auto walker=std::filesystem::directory_iterator(images_dir);
@@ -115,23 +115,15 @@ std::map<std::string,pipeline::list_type>pipeline::get_images_for_classification
     return results;
 }
 
-DataLoader::DataLoader(const list_type& _images_list, 
-                const int _batch_size, const bool _augment, 
-                const bool _shuffle, const int _seed, 
-                const int _H, const int _W, const int _C):
-                images_list(_images_list),
-                batch_size(_batch_size),
-                augment(_augment),
-                shuffle(_shuffle),
-                seed(_seed),
-                H(_H),
-                W(_W),
-                C(_C){
-    this->images_num=this->images_list.size();//图片数量
-    this->buffer.reserve(this->batch_size);
-    for(int i=0;i<this->batch_size;++i)
-        this->buffer.emplace_back(new Tensor3D(C,H,W));
+
+pipeline::DataLoader::DataLoader(const list_type &_images_list, const int _bs, const bool _aug, const bool _shuffle, const std::tuple<int, int, int> image_size, const int _seed)
+: images_list(_images_list), batch_size(_bs), augment(_aug), shuffle(_shuffle), W(std::get<0>(image_size)), H(std::get<0>(image_size)), C(std::get<0>(image_size)), seed(_seed){
+this->images_num=images_list.size();
+this->buffer.reserve(this->batch_size);
+for(int i=0;i<this->batch_size;++i)
+    this->buffer.emplace_back(new Tensor3D(this->C,this->H,this->W));
 }
+
 
 int DataLoader::length()const{return this->images_num;}
 

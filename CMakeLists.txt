@@ -93,7 +93,7 @@ message(STATUS
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
 
-set(IMAGE_DIR ${PROJECT_SOURCE_DIR}/imagesDir)
+set(IMAGE_DIR ${PROJECT_SOURCE_DIR}/images)
 file(MAKE_DIRECTORY ${IMAGE_DIR})
 # 在CMakeLists.txt文件中，直接将路径添加为宏定义：
 add_definitions(-DIMAGE_DIR="${IMAGE_DIR}")

@@ -8,14 +8,19 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/rain_programing/vscodeProject/CNN/src/alexnet.cpp" "CMakeFiles/CNN.dir/src/alexnet.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/alexnet.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/architectures.cpp" "CMakeFiles/CNN.dir/src/architectures.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/architectures.cpp.obj.d"
+  "D:/rain_programing/vscodeProject/CNN/src/batchnorm2d.cpp" "CMakeFiles/CNN.dir/src/batchnorm2d.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/batchnorm2d.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/conv2d.cpp" "CMakeFiles/CNN.dir/src/conv2d.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/conv2d.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/data_format.cpp" "CMakeFiles/CNN.dir/src/data_format.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/data_format.cpp.obj.d"
+  "D:/rain_programing/vscodeProject/CNN/src/dropout.cpp" "CMakeFiles/CNN.dir/src/dropout.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/dropout.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/linear.cpp" "CMakeFiles/CNN.dir/src/linear.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/linear.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/main.cpp" "CMakeFiles/CNN.dir/src/main.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/main.cpp.obj.d"
+  "D:/rain_programing/vscodeProject/CNN/src/metrics.cpp" "CMakeFiles/CNN.dir/src/metrics.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/metrics.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/pipeline.cpp" "CMakeFiles/CNN.dir/src/pipeline.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/pipeline.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/pool2d.cpp" "CMakeFiles/CNN.dir/src/pool2d.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/pool2d.cpp.obj.d"
   "D:/rain_programing/vscodeProject/CNN/src/relu.cpp" "CMakeFiles/CNN.dir/src/relu.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/relu.cpp.obj.d"
+  "D:/rain_programing/vscodeProject/CNN/src/utils.cpp" "CMakeFiles/CNN.dir/src/utils.cpp.obj" "gcc" "CMakeFiles/CNN.dir/src/utils.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -37,8 +37,7 @@ namespace pipeline
     }; 
 
 
-    class DataLoader
-    {
+    class DataLoader{
         using batch_type=std::pair<std::vector<tensor>,std::vector<int>>;
 
         private:
@@ -53,14 +52,9 @@ namespace pipeline
             const int H, W, C;     // 允许的图像尺寸
         
         public:
-            explicit DataLoader(const list_type& _images_list, 
-                const int _batch_size, const bool _augment, 
-                const bool _shuffle, const int _seed, 
-                const int _H, const int _W, const int _C);
-            explicit DataLoader(const list_type& _images_list, 
-                const int _batch_size, const bool _augment, 
-                const bool _shuffle, const int _seed, 
-                const std::tuple<int, int, int> image_size={224, 224, 3}); 
+            explicit DataLoader(const list_type& _images_list, const int _bs=1, 
+            const bool _aug=false, const bool _shuffle=true, 
+            const std::tuple<int, int, int> image_size={224, 224, 3},  const int _seed=212);
     
             int length() const;
             

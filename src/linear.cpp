@@ -52,7 +52,7 @@ std::vector<tensor>LinearLayer::forward(const std::vector<tensor>& input){
     return output;
 }
 
-std::vector<tensor>LinearLayer::backward(std::vector<tensor>& delta){
+std::vector<tensor>LinearLayer::backward(const std::vector<tensor>& delta){
     //获取delta的信息
     const int batch_size=delta.size();
 

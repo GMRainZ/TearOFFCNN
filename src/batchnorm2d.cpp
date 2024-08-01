@@ -9,7 +9,7 @@ namespace {
     }
 }
 
-BatchNorm2D::BatchNorm2D(std::string _name,const int _out_channels,const data_type _eps=1e-5,const data_type _momentum=0.1)
+BatchNorm2D::BatchNorm2D(std::string _name,const int _out_channels,const data_type _eps,const data_type _momentum)
     :Layer(_name),out_channels(_out_channels),eps(_eps),momentum(_momentum),
     gamma(_out_channels,1.0), beta(_out_channels,0.0),
     moving_mean(_out_channels,0.0),moving_var(_out_channels,0.0),
@@ -112,7 +112,7 @@ std::vector<tensor> BatchNorm2D::forward(const std::vector<tensor>& input) {
 
 
 //batch norm 的 delta 也可以就地修改
-std::vector<tensor>BatchNorm2D::backward(std::vector<tensor> &delta){
+std::vector<tensor>BatchNorm2D::backward(const std::vector<tensor> &delta){
     const int batch_size=delta.size();
     const int feature_map_length=delta[0]->H*delta[0]->W;
     const int output_length=feature_map_length*batch_size;

@@ -246,7 +246,7 @@ namespace architectures {
          * @brief 反向传播
          * @param delta 
          */
-        std::vector<tensor>backward(std::vector<tensor>&delta);
+        std::vector<tensor>backward(const std::vector<tensor>&delta);
 
         virtual void update_gradients(const data_type learning_rate=1e-4);
         virtual void save_weights(std::ofstream& writer)const;
@@ -301,7 +301,7 @@ namespace architectures {
          * @brief backward
          * 
          */
-        std::vector<tensor>backward(std::vector<tensor>&delta);
+        std::vector<tensor>backward(const std::vector<tensor>&delta);
     
         /**
          * @brief 更新学习率
@@ -355,7 +355,67 @@ namespace architectures {
          * 
          * @param delta 
          */
-        std::vector<tensor>backward(std::vector<tensor>&delta);
+        std::vector<tensor>backward(const std::vector<tensor>&delta);
+    };
+
+    class AlexNet{
+    public:
+        /**
+         * @brief 是否打印信息
+         * 
+         */
+        bool print_info=false;
+    private:
+        /**
+         * @brief 各层
+         * 
+         */
+        std::list<std::shared_ptr<Layer>>layers_sequence;
+    public:
+        /**
+         * @brief Construct a new Alex Net object
+         * 
+         * @param num_classes 
+         * @param batch_norm 
+         */
+        AlexNet(const int num_classes=10,const bool batch_norm=false);
+
+        /**
+         * @brief forward
+         * 
+         * @param input 
+         */
+        std::vector<tensor>forward(const std::vector<tensor>&input);
+        /** 
+         * @brief backward
+         */
+        void backward(std::vector<tensor>&delta_start);
+
+        /**
+         * @brief 更新权值
+         * 
+         * @param learning_rate 
+         */
+        void update_gradients(const data_type learning_rate=1e-4);
+
+        /**
+         * @brief 保存权值
+         * 
+         * @param writer 
+         */
+                // 保存模型
+        void save_weights(const std::filesystem::path& save_path) const;
+    
+        /**
+         * @brief 加载权值
+         * 
+         * @param reader 
+         */
+
+        // 加载模型
+        void load_weights(const std::filesystem::path& checkpoint_path);
+
+        cv::Mat grad_cam(const std::string&layer_name)const;
     };
 }
 
